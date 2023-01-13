@@ -49,6 +49,12 @@ suite("Extension Test Suite", function () {
       "export EXAMPLE_ENV_2=2",
       "utf8"
     );
+    fs.promises.mkdir(workspace.uri.fsPath + "/bin");
+    await fs.promises.writeFile(
+      workspace.uri.fsPath + "/bin/setup.sh",
+      "export EXAMPLE_ENV_3=3",
+      "utf8"
+    );
     let config = vscode.workspace.getConfiguration();
     await config.update(
       "nd280.nd280SoftwarePilotProfile",
@@ -75,7 +81,7 @@ suite("Extension Test Suite", function () {
     const env: any = config.get("cmake.environment");
     assert(env["EXAMPLE_ENV_1"] === "1");
     assert(env["EXAMPLE_ENV_2"] === "2");
-
+    assert(env["EXAMPLE_ENV_3"] === "3");
     // check that a kit has been defined that contains the ND280 compiler
     const kitsfile = `${workspace.uri.fsPath}/.vscode/cmake-kits.json`;
     assert(fs.existsSync(kitsfile));
