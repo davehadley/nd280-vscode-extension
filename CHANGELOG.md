@@ -2,6 +2,11 @@
 
 All notable changes to the "nd280" extension will be documented in this file.
 
+## 0.1.2
+
+- Fix bug where we failed to generate `bin/setup.sh`.
+- Improve logging.
+
 ## 0.1.1
 
 - Now automatically runs `${workspaceDir}/bin/setup.sh` if it exists and tries to

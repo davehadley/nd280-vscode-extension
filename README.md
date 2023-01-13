@@ -60,7 +60,7 @@ First released version.
 - Inside the package root directory run `npm install`.
 - Run `npm test` to run automated tests.
 - Build the package: `npm run package`.
-- Install it locally with `code --install-extension nd280-0.0.1.vsix`.
+- Install it locally with `code --install-extension nd280-0.1.2.vsix`.
 
 ## License
 
