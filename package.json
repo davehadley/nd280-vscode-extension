@@ -2,7 +2,7 @@
   "name": "nd280",
   "displayName": "nd280",
   "description": "VS Code extension for ND280 software development (https://git.t2k.org/nd280)",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "repository": "https://github.com/davehadley/nd280-vscode-extension",
   "publisher": "dave-hadley",
   "pricing": "Free",

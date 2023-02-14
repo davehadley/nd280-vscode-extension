@@ -2,6 +2,10 @@
 
 All notable changes to the "nd280" extension will be documented in this file.
 
+## 0.1.3
+
+- Environment variables are now set in the CMake kits file.
+
 ## 0.1.2
 
 - Fix bug where we failed to generate `bin/setup.sh`.

@@ -11,13 +11,13 @@ let logger: vscode.OutputChannel;
 
 function log(message: string) {
   const datetime = new Date().toISOString();
-  const fullmessage = `[ND280] [v0.1.2] ${datetime} [INFO] ${message}`;
+  const fullmessage = `[ND280] [v0.1.3] ${datetime} [INFO] ${message}`;
   logger?.appendLine(fullmessage);
 }
 
 function error(message: string) {
   const datetime = new Date().toISOString();
-  const fullmessage = `[ND280] [v0.1.2] ${datetime} [ERROR] ${message}`;
+  const fullmessage = `[ND280] [v0.1.3] ${datetime} [ERROR] ${message}`;
   logger?.appendLine(fullmessage);
 }
 
@@ -323,6 +323,7 @@ async function configureCmakeKits(info: ND280Info) {
           C: gcc, // eslint-disable-line @typescript-eslint/naming-convention
           CXX: gcc, // eslint-disable-line @typescript-eslint/naming-convention
         },
+        environmentVariables: info.env,
       };
       kits.push(newValue);
       const parentDir = path.dirname(kitsfile);
