@@ -61,6 +61,7 @@ First released version.
 - Run `npm test` to run automated tests.
 - Build the package: `npm run package`.
 - Install it locally with `code --install-extension nd280-0.1.3.vsix`.
+- To publish a new version to the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=dave-hadley.nd280): `npm run login && npm run publish`
 
 ## License
 
