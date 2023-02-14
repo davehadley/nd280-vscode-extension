@@ -323,6 +323,7 @@ async function configureCmakeKits(info: ND280Info) {
           C: gcc, // eslint-disable-line @typescript-eslint/naming-convention
           CXX: gcc, // eslint-disable-line @typescript-eslint/naming-convention
         },
+        environmentVariables: info.env,
       };
       kits.push(newValue);
       const parentDir = path.dirname(kitsfile);
